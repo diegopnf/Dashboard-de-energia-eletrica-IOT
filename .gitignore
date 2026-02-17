@@ -1,0 +1,5 @@
+.pio
+.vscode
+.python-version
+**/*.pyc
+.DS_Store
