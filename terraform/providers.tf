@@ -6,6 +6,12 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {
+    bucket = "dashboard-de-energia-eletrica-firmware-repo" # Use o nome do bucket que você já criou
+    key    = "state/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
